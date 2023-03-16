@@ -14,5 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $arr = [1, 2, 3, 4, 5];
+    return view(
+        'welcome',
+        [
+            'arr' => $arr
+        ]
+    );
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/products', function () {
+    return view('products');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/main', function () {
+    return view('main');
 });
