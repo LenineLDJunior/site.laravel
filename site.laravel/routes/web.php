@@ -29,7 +29,9 @@ Route::get('/login', function () {
 });
 
 Route::get('/products', function () {
-    return view('products');
+
+    $busca = request('search');
+    return view('products', ['busca' => $busca]);
 });
 
 Route::get('/contact', function () {
@@ -37,4 +39,8 @@ Route::get('/contact', function () {
 });
 Route::get('/main', function () {
     return view('main');
+});
+
+Route::get('/products_teste/{id?}', function ($id = null) {
+    return view('products', ['id' => $id]);
 });
