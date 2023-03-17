@@ -12,17 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use App\Http\Controllers\EventController;
 
-Route::get('/', function () {
-
-    $arr = [1, 2, 3, 4, 5];
-    return view(
-        'welcome',
-        [
-            'arr' => $arr
-        ]
-    );
-});
+Route::get('/', [EventController::class, 'index']);
 
 Route::get('/login', function () {
     return view('login');
@@ -41,6 +33,7 @@ Route::get('/main', function () {
     return view('main');
 });
 
-Route::get('/products_teste/{id?}', function ($id = null) {
+//Teste id nulo, pode cetar um id estavel caso o usuario não o declare;
+/*Route::get('/products_teste/{id?}', function ($id = null) {
     return view('products', ['id' => $id]);
-});
+});  */
