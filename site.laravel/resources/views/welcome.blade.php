@@ -17,7 +17,13 @@
     <a href="/events.create">Crie seu evento</a>
 </h5>
 @foreach($events as $events)
-<P>{{ $events -> title }} -- {{ $events -> description }} -- {{ $events -> attractions }} </P>
+<P>{{ $events -> title }} <br>
+    {{ $events -> description }} <br>
+    {{ $events -> attractions}} <br>
+    {{ $events -> date}} <br>
+    {{ $events -> city }} <br>
+    {{ $events -> private}} <br>
+</P>
 @endforeach
 
 @endsection
