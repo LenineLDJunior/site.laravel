@@ -24,13 +24,3 @@ Route::get('/produtos', function () {
 Route::get('/produtos/{id}', function ($id) {
     return view('products', ['id' => $id]);
 });
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-
-//Teste id nulo, pode cetar um id estavel caso o usuario não o declare;
-/*Route::get('/products_teste/{id?}', function ($id = null) {
-    return view('products', ['id' => $id]);
-});  */
