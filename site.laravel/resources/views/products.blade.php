@@ -2,7 +2,6 @@
 @section('title', 'Produtos')
 @section('content')
 
-@if($busca != "")
-<p>O usuario esta buscando: {{$busca}}</p>
-@endif
+<p>Exibindo produto id: {{ $id }}</p>
+
 @endsection

@@ -22,7 +22,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2023 Lenine Junior</p>
+        <p>&copy; 2023 Lenine Junior - Sympla da shoppe</p>
     </footer>
 </body>
 

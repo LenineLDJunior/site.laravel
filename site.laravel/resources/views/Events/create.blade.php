@@ -2,6 +2,6 @@
 @section('title', 'Criar evento ')
 @section('content')
 
-<h1>Crie um evento </h1>
+<h1>Crie Seu Evento </h1>
 
 @endsection

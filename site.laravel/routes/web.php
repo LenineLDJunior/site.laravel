@@ -15,24 +15,20 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
-Route::get('/events/create', [EventController::class, 'create']);
+Route::get('/events.create', [EventController::class, 'create']);
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/produtos', function () {
+    return view('products');
 });
 
-Route::get('/products', function () {
-
-    $busca = request('search');
-    return view('products', ['busca' => $busca]);
+Route::get('/produtos/{id}', function ($id) {
+    return view('products', ['id' => $id]);
 });
 
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/main', function () {
-    return view('main');
-});
+
 
 //Teste id nulo, pode cetar um id estavel caso o usuario não o declare;
 /*Route::get('/products_teste/{id?}', function ($id = null) {
