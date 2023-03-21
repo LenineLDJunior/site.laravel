@@ -3,10 +3,14 @@
 @section('content')
 <div id="event-create-container" class="col-md-6 offset-md-3">
     <h1>Crie Seu Evento </h1>
-    <form action="/events" method="post">
+    <form action="/events" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
+<<<<<<< HEAD
             <label for="img">Foto do Evento</label>
+=======
+            <label for="image">Imagem do Evento</label>
+>>>>>>> 7f6010580eef8668e153789d708914076f6ffae0
             <input type="file" class="form-control-file" id="image" name="image">
         </div>
         <div class="form-group">
@@ -19,7 +23,7 @@
         </div>
         <div class="form-group">
             <label for="title">Descrição</label>
-            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descrição do Evento"></textarea>
+            <textarea type="text"  class="form-control" id="description" name="description" placeholder="Descrição do Evento"></textarea>
         </div>
         <div class="form-group">
             <label for="title">Atrações</label>
