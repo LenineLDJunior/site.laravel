@@ -11,11 +11,21 @@
             <p class="events-city">{{$events->city}}</p>
             <h3>O evento conta com:</h3>
             <ul id="itens-list">
-                @foreach($event -> itens as $itens)
+                @foreach($events -> itens as $itens)
                 <li>{{$itens}}</li>
                 @endforeach
             </ul>
+            <h2>
+                <form action="/events/{{$events->id}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger delete-btn">Delete</button>
+                </form>
+            </h2>
         </div>
+        <h5>
+            <a href="/">Voltar para pagina principal</a>
+        </h5>
     </div>
 </div>
 @endsection

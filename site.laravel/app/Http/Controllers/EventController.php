@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\event;
+use Illuminate\Console\Scheduling\Event as SchedulingEvent;
 
 class EventController extends Controller
 {
@@ -50,5 +51,11 @@ class EventController extends Controller
     {
         $event = Event::findOrFail($id);
         return view('events.show', ['events' => $event]);
+    }
+
+    public function destroy($id)
+    {
+        Event::findOrFail($id)->delete();
+        return redirect('/')->with('msg', 'Evento excluido com sucesso!!');
     }
 }
