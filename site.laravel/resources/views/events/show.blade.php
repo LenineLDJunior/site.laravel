@@ -9,6 +9,12 @@
         <div id="info-container" class="col-md-6">
             <h1>{{$events->title}}</h1>
             <p class="events-city">{{$events->city}}</p>
+            <h3>O evento conta com:</h3>
+            <ul id="itens-list">
+                @foreach($event -> itens as $itens)
+                <li>{{$itens}}</li>
+                @endforeach
+            </ul>
         </div>
     </div>
 </div>

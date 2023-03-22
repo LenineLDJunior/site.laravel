@@ -28,6 +28,7 @@ class EventController extends Controller
         $event->attractions = $request->attractions;
         $event->date = $request->date;
         $event->private = $request->private;
+        $event->itens = $request->itens;
 
         /* Requisição da imagem */
 
