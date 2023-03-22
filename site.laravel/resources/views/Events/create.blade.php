@@ -6,24 +6,39 @@
     <form action="/events" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-<<<<<<< HEAD
             <label for="img">Foto do Evento</label>
-=======
-            <label for="image">Imagem do Evento</label>
->>>>>>> 7f6010580eef8668e153789d708914076f6ffae0
             <input type="file" class="form-control-file" id="image" name="image">
         </div>
+
         <div class="form-group">
             <label for="title">Eventos</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento">
         </div>
+
         <div class="form-group">
             <label for="title">Cidade</label>
             <input type="text" class="form-control" id="city" name="city" placeholder="Nome do Evento">
         </div>
+
         <div class="form-group">
             <label for="title">Descrição</label>
-            <textarea type="text"  class="form-control" id="description" name="description" placeholder="Descrição do Evento"></textarea>
+            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descrição do Evento"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="title">Adicione Itens do evento</label>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="cadeiras"> Cadeiras
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="palcoCentral"> Palco Central
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="areaCoberta"> Área Coberta
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="camarote"> Camarote
+            </div>
         </div>
         <div class="form-group">
             <label for="title">Atrações</label>
