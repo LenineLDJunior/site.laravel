@@ -22,7 +22,8 @@
 
         <div class="form-group">
             <label for="title">Descrição</label>
-            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descrição do Evento"></textarea>
+            <textarea type="text" class="form-control" id="description" name="description"
+                placeholder="Descrição do Evento"></textarea>
         </div>
 
         <div class="form-group">
@@ -42,11 +43,12 @@
         </div>
         <div class="form-group">
             <label for="title">Atrações</label>
-            <input type="text" class="form-control" id="attractions" name="attractions" placeholder="Atrações do Evento">
+            <input type="text" class="form-control" id="attractions" name="attractions"
+                placeholder="Atrações do Evento">
         </div>
         <div class="form-group">
-            <label for="title">Data</label>
-            <input type="text" class="form-control" id="date" name="date" placeholder="Data do Evento">
+            <label for="date">Data</label>
+            <input type="date" class="form-control" id="date" name="date" placeholder="Data do Evento">
         </div>
         <div class="form-group">
             <label for="title">Privado</label>

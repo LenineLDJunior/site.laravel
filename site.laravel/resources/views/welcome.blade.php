@@ -19,6 +19,10 @@
 <h5>
     <a href="/events.create">Crie seu evento</a>
 </h5>
+<h2>Busque por um evento </h2>
+<form action="/" method="GET">
+    <input type="text" id="search" name="search" class="form-control" placeholder="Procurar Evento">
+</form>
 @foreach($events as $events)
 <section>
     <div class="card col-md-3">

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class event extends Model
 {
     use HasFactory;
-    protected $casts = [
-        'itens' => 'array'
-    ];
+    protected $casts = ['itens' => 'array'];
+
+    protected $date = ['date'];
 }

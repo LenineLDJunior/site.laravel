@@ -16,10 +16,10 @@
                 @endforeach
             </ul>
             <h2>
-                <form action="/events/{{$events->id}}" method="POST">
+                <form action="/events/{{$events->id}}" method="GET">
                     @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger delete-btn">Delete</button>
+                    @method('DELETAR')
+                    <button type="submit" class="btn btn-danger delete-btn"> DELETAR EVENTO </button>
                 </form>
             </h2>
         </div>

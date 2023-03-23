@@ -3,12 +3,12 @@
 
 <head>
     <title>Meu Site</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="styles.css" type="text/css" href="style.css">
 </head>
 
 <body class="paginaprincipal">
     <div class="container">
-        @if(session("msg"))
+        @if(session('msg'))
         <p class="msg">{{session('msg')}}</p>
         @endif
         @yield('content')
