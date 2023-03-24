@@ -2,23 +2,25 @@
 <html>
 
 <head>
-    <title>Meu Site</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lenine Junior</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <h1> Seja bem vindo ao Site de um Programador Junior. By Lenine Junior </h1>
-<h5>
-    <a href="/contact">Fale comigo</a>
-</h5>
-<h5>
-    <a href="/login">Faça login</a>
-</h5>
-<h5>
-    <a href="/products">Produtos</a>
-</h5>
-<h5>
-    <a href="/events.create">Crie seu evento</a>
-</h5>
+<section id="menu">
+    <h5>
+        <a href="/contact">Fale comigo</a>
+    </h5>
+    <h5>
+        <a href="/login">Faça login</a>
+    </h5>
+    <h5>
+        <a href="/products">Produtos</a>
+    </h5>
+    <h5>
+        <a href="/events.create">Crie seu evento</a>
+    </h5>
+</section>
 <h2>Busque por um evento </h2>
 <form action="/" method="GET">
     <input type="text" id="search" name="search" class="form-control" placeholder="Procurar Evento">
