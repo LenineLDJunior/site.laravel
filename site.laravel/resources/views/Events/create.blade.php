@@ -3,7 +3,7 @@
 
 <head>
     <title>Crie seu Evento</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <body>
@@ -28,8 +28,7 @@
 
             <div class="form-group">
                 <label for="title">Descrição</label>
-                <textarea type="text" class="form-control" id="description" name="description"
-                    placeholder="Descrição do Evento"></textarea>
+                <textarea type="text" class="form-control" id="description" name="description" placeholder="Descrição do Evento"></textarea>
             </div>
 
             <div class="form-group">
@@ -49,8 +48,7 @@
             </div>
             <div class="form-group">
                 <label for="title">Atrações</label>
-                <input type="text" class="form-control" id="attractions" name="attractions"
-                    placeholder="Atrações do Evento">
+                <input type="text" class="form-control" id="attractions" name="attractions" placeholder="Atrações do Evento">
             </div>
             <div class="form-group">
                 <label for="date">Data</label>
