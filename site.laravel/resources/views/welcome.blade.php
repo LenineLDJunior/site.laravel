@@ -15,7 +15,7 @@
         <a href="/login">Faça login</a>
     </h5>
     <h5>
-        <a href="/products">Produtos</a>
+        <a href="/events/{{$events -> id}}">Produtos</a>
     </h5>
     <h5>
         <a href="/events.create">Crie seu evento</a>

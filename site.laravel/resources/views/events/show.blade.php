@@ -16,9 +16,9 @@
                 @endforeach
             </ul>
             <h2>
-                <form action="/events/{{$events->id}}" method="GET">
+                <form action="/events/{{$events->id}}" method="POST">
                     @csrf
-                    @method('DELETAR')
+                    @method('DELETE')
                     <button type="submit" class="btn btn-danger delete-btn"> DELETAR EVENTO </button>
                 </form>
             </h2>
