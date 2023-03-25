@@ -3,7 +3,7 @@
 
 <head>
     <title>Lenine Junior</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <h1> Seja bem vindo ao Site de um Programador Junior. By Lenine Junior </h1>
