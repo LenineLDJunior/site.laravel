@@ -3,7 +3,7 @@
 
 <head>
     <title>Crie seu Evento</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
 </head>
 
 <body>
