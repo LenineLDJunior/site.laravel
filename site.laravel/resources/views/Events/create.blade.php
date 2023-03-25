@@ -52,7 +52,7 @@
             </div>
             <div class="form-group">
                 <label for="date">Data</label>
-                <input type="date" class="form-control" id="date" name="date" placeholder="Data do Evento">
+                <input type="date" class="form-control" id="date" name="date">
             </div>
             <div class="form-group">
                 <label for="title">Privado</label>
