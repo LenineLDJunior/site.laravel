@@ -8,11 +8,14 @@
 
 <h1> Seja bem vindo ao Site de um Programador Junior. By Lenine Junior </h1>
 <section id="menu">
+<h5>
+        <a href="/register">Registre-se</a>
+    </h5>
     <h5>
         <a href="/contact">Fale comigo</a>
     </h5>
     <h5>
-        <a href="/login">Faça login</a>
+        <a href="/entrar">Faça login</a>
     </h5>
 
     <h5>
