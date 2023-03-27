@@ -5,7 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\event;
+use App\Http\Requests\ProfileUpdateRequest;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\View\View;
 use Illuminate\Console\Scheduling\Event as SchedulingEvent;
+use App\Http\Controllers\ProfileController;
 
 class EventController extends Controller
 {
