@@ -30,7 +30,15 @@
                             <th scropt="row"> {{$loop->index +1}}</th>
                             <td><a href="/events/{{$events->id}}">{{$events -> title}}</a></td>
                             <td>0</td>
-                            <td><a href="#">Editar</a><a href="#">Deletar</a></td>
+                            <td>
+                                <a href="/events/edit/{{$events->id}}">Editar</a>
+                                <form action="/events/{{$events->id}}" method="POST">
+                                     @csrf
+                                     @method('DELETE')
+                                <button type="submit" class="btn btn-danger delete-btn">Deletar </button>
+                                </form>
+                                
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>

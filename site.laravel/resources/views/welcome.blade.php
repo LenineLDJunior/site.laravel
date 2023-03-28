@@ -9,11 +9,11 @@
 <h1> Seja bem vindo ao Site de um Programador Junior. By Lenine Junior </h1>
 <section id="menu">
     <h5>
-        <a href="/register">Registre-se</a>
     @if (Auth::check())
         <a href="/dashboard">Ir para Dashboard</a>
         <a href="/events.create">Crie seu evento</a>
     @else
+        <a href="/register">Registre-se</a>
         <a href="/login">Faça login</a>
     @endif
      </h5>

@@ -16,13 +16,6 @@
                 <li>{{$itens}}</li>
                 @endforeach
             </ul>
-            <h2>
-                <form action="/events/{{$events->id}}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger delete-btn"> DELETAR EVENTO </button>
-                </form>
-            </h2>
         </div>
         <h5>
             <a href="/">Voltar para pagina principal</a>

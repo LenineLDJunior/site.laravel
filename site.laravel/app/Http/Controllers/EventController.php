@@ -76,12 +76,21 @@ class EventController extends Controller
     public function destroy($id)
     {
         Event::findOrFail($id)->delete();
-        return redirect('/')->with('msg', 'Evento excluido com sucesso!!');
+        return redirect('/dashboard')->with('msg', 'Evento excluido com sucesso!!');
     }
 
     public function dashboard(){
         $user = auth()->user();
         $events = $user->events;
-        return view('dashboard', ['events' => $events]);
+        return view('/dashboard', ['events' => $events]);
+    }
+
+    public function edit($id){
+        $event = Event::findOrFail($id);
+        return view('events.edit',['event'=>$event]);
+    }
+    public function update(Request $request){
+        Event::findOrFail($request->id)->update($request->all());
+        return redirect('/dashboard')->with('msg', 'Evento editado com Sucesso!!!');
     }
 }
