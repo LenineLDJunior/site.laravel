@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
   }
   
+  [href] {
+    background: #84e;
+  }
+
   #event-create-container {
     background-color: #fcf8f8;
     padding: 20px;
@@ -83,4 +87,13 @@ body {
   
   #menu a:hover {
     color: #f00;
+  }
+
+  .dashboard-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .dashboard-container th {
+    width: 25%;
   }

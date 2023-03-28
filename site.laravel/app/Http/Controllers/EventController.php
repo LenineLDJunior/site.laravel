@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\event;
+use App\Models\User;
 use App\Http\Requests\ProfileUpdateRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -57,6 +58,9 @@ class EventController extends Controller
             $event->image = $imageName;
         }
 
+        $user = auth()->user();
+        $event->user_id = $user->id;
+
         $event->save();
 
         return redirect('/')->with('msg', 'Evento criado com Sucesso!!!');
@@ -65,12 +69,19 @@ class EventController extends Controller
     public function show($id)
     {
         $event = Event::findOrFail($id);
-        return view('events.show', ['events' => $event]);
+        $eventOwner = User::where('id', '=' , $event->user_id)->first()->toArray();
+        return view('events.show', ['events' => $event, 'eventOwner' => $eventOwner]);
     }
 
     public function destroy($id)
     {
         Event::findOrFail($id)->delete();
         return redirect('/')->with('msg', 'Evento excluido com sucesso!!');
+    }
+
+    public function dashboard(){
+        $user = auth()->user();
+        $events = $user->events;
+        return view('dashboard', ['events' => $events]);
     }
 }

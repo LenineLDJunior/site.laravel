@@ -8,7 +8,8 @@
         </div>
         <div id="info-container" class="col-md-6">
             <h1>{{$events->title}}</h1>
-            <p class="events-city">{{$events->city}}</p>
+            <h1>Dono do evento : {{$eventOwner['name']}} </h1>
+            <h1>Cidade que irá acontecer o evento : <h3>{{$events->city}}</h3></h1>
             <h3>O evento conta com:</h3>
             <ul id="itens-list">
                 @foreach($events -> itens as $itens)

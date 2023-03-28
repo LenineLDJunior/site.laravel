@@ -8,25 +8,15 @@
 
 <h1> Seja bem vindo ao Site de um Programador Junior. By Lenine Junior </h1>
 <section id="menu">
-
     <h5>
         <a href="/register">Registre-se</a>
-    </h5>
     @if (Auth::check())
-    <h5>
-        <a href="/dashboard">Ir para Home</a>
-    </h5>
-    @else
-    <h5>
-        <a href="/login">Faça login</a>
-    </h5>
-    @endif
-    @if (Auth::check())
-    <h5>
+        <a href="/dashboard">Ir para Dashboard</a>
         <a href="/events.create">Crie seu evento</a>
-    </h5>
     @else
+        <a href="/login">Faça login</a>
     @endif
+     </h5>
 </section>
 <h2>Busque por um evento </h2>
 <form action="/" method="GET">
@@ -47,10 +37,11 @@
             {{ $events -> city }} <br>
             @if($events -> private == 0)
             <p>O evento não é privado</p>
+            <a href="/events/{{$events -> id}}" class="btn btn-primary">Saber mais</a>
             @else
             <p>O Evento é Privado</p>
             @endif
-            <a href="/events/{{$events -> id}}" class="btn btn-primary">Saber mais</a>
+            
         </div>
     </section>
     @endforeach

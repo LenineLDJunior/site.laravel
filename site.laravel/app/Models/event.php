@@ -11,4 +11,8 @@ class event extends Model
     protected $casts = ['itens' => 'array'];
 
     protected $date = ['date'];
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
 }

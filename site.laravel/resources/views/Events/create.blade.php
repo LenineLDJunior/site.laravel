@@ -17,7 +17,7 @@
             </div>
 
             <div class="form-group">
-                <label for="title">Eventos</label>
+                <label for="title">Nome do seu Evento</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento">
             </div>
 
