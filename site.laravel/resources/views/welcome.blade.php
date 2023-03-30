@@ -28,9 +28,10 @@
     <h1>Esses são os eventos disponiveis no site:</h1>
     @foreach($events as $events)
     <section>
-        <div class="card col-md-6">
+        <div class="wrapper">
+            <section class="bloco">
             <h2> {{ $events -> title }}</h2> <br>
-            <img src="/img/events/{{ $events -> image}}"><br>
+            <img src="/img/events/{{ $events -> image}}" style = "width:flex"><br>
             {{ $events -> description }} <br>
             {{ $events -> attractions}} <br>
             {{date('d/m/Y', strtotime($events -> date))}} <br>
@@ -41,7 +42,7 @@
             @else
             <p>O Evento é Privado</p>
             @endif
-            
+            </section>
         </div>
     </section>
     @endforeach

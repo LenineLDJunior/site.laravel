@@ -97,3 +97,31 @@ body {
   .dashboard-container th {
     width: 25%;
   }
+
+  .principal {
+    background-color: #000000;
+    height: 270px;
+    width: 100%;
+  }
+  
+  div.wrapper{
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+  .bloco {
+    height:;
+    width: 45%;
+    float: left;
+    background-color: #494646;
+    margin: 20px;
+  }
+  
+  footer{
+    text-align: center;
+    background-color: red;
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    line-height: 50px;
+  }

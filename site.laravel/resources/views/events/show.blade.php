@@ -16,6 +16,15 @@
                 <li>{{$itens}}</li>
                 @endforeach
             </ul>
+            <form action="/events/confirm/{id}" method="POST">
+                @csrf
+                <a href="/events/confirm/{id}"
+                    onclick="event.preventDefault();
+                    this.closest('form').submit();">
+                        Confirmar sua presença
+                </a>
+            </form>
+
         </div>
         <h5>
             <a href="/">Voltar para pagina principal</a>
