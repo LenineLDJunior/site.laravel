@@ -30,8 +30,8 @@
     <section>
         <div class="wrapper">
             <section class="bloco">
-            <h2> {{ $events -> title }}</h2> <br>
             <img src="/img/events/{{ $events -> image}}" style = "width:flex"><br>
+            <h2> {{ $events -> title }}</h2> <br>
             {{ $events -> description }} <br>
             {{ $events -> attractions}} <br>
             {{date('d/m/Y', strtotime($events -> date))}} <br>

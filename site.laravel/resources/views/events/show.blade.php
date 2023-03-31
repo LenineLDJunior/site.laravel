@@ -16,9 +16,9 @@
                 <li>{{$itens}}</li>
                 @endforeach
             </ul>
-            <form action="/events/confirm/{id}" method="POST">
+            <form action="/events/join/{id}" method="POST">
                 @csrf
-                <a href="/events/confirm/{id}"
+                <a href="/events/join/{id}"
                     onclick="event.preventDefault();
                     this.closest('form').submit();">
                         Confirmar sua presença
