@@ -12,7 +12,7 @@ class event extends Model
 
     protected $date = ['date'];
 
-    protected $guarded = [];
+    
 
     public function user(){
         return $this->belongsTo('App\Models\User');
